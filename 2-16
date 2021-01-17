@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n,z, s;
+	bool c = false;
+	cout << "Enter N\n";
+	cin >> n;
+	cout << "Enter Z\n";
+	cin >> z;
+	while (n>0)
+	{
+		s = n % 10;
+		if (s == z)
+		{
+			c = true;
+			cout << "YES" << endl;
+		}
+		n = n / 10;
+	}
+	if(!c)
+	cout << " NO " ;
+		
+		cout << endl << endl;
+
+
+	
+
+}
