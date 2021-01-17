@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a,b,c ,d;
+	double x, y;
+	while (true)
+	{
+		cout << "Enter a\n";
+		cin >> a;
+		cout << "Enter b\n";
+		cin >> b;
+		cout << "Enter c\n";
+		cin >> c;
+		d = b * b - 4 * a*c;
+		if (d < 0)
+		{
+			cout << "NO SOLUTION" << endl;
+		}
+		else
+		{
+			x = (-1 * b + sqrt(d)) / 2 * a;
+			y= (-1 * b - sqrt(d)) / 2 * a;
+			cout << "X1 = " << x << endl;
+			cout << "X2 = " << y << endl;
+		}
+		
+		
+		cout << endl << endl;
+
+
+	}
+
+}
