@@ -1,0 +1,10 @@
+#include <iostream>
+Using namespase std;
+Int main()
+{
+     Int max,a,b,c;
+If (a>b && a>c) max=a;
+else if(b>a &&b>c) max=b;
+else max=c;
+cout<<max<<endl;
+}
