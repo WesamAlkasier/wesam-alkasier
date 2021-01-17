@@ -1,0 +1,22 @@
+#include <iostream>
+Using namespase std;
+Int sum (int n)
+{
+Int sum =0;
+For(int i=n ; i>=0;i--)
+{sum+=i*exp(10,i);
+}
+Return n sum;
+}
+Int main()
+{
+Int n,res;
+Cout << “enter”;
+Cin>>n;
+For (int i=0;i<=n;i++)
+{
+res=res+sum(i);
+} 
+Cout <<sum;
+Return 0;
+}
