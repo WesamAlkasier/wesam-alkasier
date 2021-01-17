@@ -7,20 +7,16 @@ int main()
 	bool c = false;
 	cout << "Enter N\n";
 	cin >> n;
-	cout << "Enter Z\n";
-	cin >> z;
-	while (n>0)
+	s = 0;
+	z = 1;
+	for(int i=1;i<=n;i++)
 	{
-		s = n % 10;
-		if (s == z)
-		{
-			c = true;
-			cout << "YES" << endl;
-		}
-		n = n / 10;
+		z = -1 * z;
+		s = s+z*i;
+		
 	}
-	if(!c)
-	cout << " NO " ;
+	
+	cout << " The result is  " << s << endl;
 		
 		cout << endl << endl;
 
@@ -28,3 +24,4 @@ int main()
 	
 
 }
+
