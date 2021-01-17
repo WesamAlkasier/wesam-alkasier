@@ -1,0 +1,10 @@
+#include <iostream>
+Using namespase std;
+Int main()
+{
+Int a,b,c;
+Cout<<”enter num”;
+Cin>> a>> b;
+C=a/b;
+Cout<<  c <<endl;
+}
