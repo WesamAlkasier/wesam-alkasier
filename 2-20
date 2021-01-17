@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+  float n, z, res;
+  bool answ=false;
+  cout << "Function length: ";
+  cin >> n;
+  cout << "number to search: ";
+  cin >> z;
+
+  for (int i=1; i<=n; i++)
+  {
+    res=sin(n+(i/n));
+    if (res<=z+0.000001 && res>=z-0.000001 || res==z)
+    {
+      answ=true;
+      break;
+    }
+    else {}
+  }
+  if (answ==true)
+  {
+    cout << "num" << z << " present in this sequence";
+  }
+  else
+  {
+    cout << "Число " << z << "absent in this sequence";
+  }
+  return 0;
+}
