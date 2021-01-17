@@ -1,38 +1,36 @@
-#include <iostream>
+#include <iostream>#include <iostream>
 using namespace std;
 
 int main()
 {
-	int n,z, s;
-	bool c = true;
-	cout << "Enter the number\n";
-	cin >> n;
-	z = n;
-	while(n!=0)
-	{
-		cout << "Enter the number\n";
-		cin >> n;
-		if (n >= z)
-		{
-			z = n;
-		}
-		else {
-			if(n!=0)
-			c = false;
-		}
-
-		
-	}
-	
-	cout << " The result is  ";
-	if(c)
-	cout<< "TRUE" << endl;
-	else
-		cout << "FALSE" << endl;
-		
-		cout << endl << endl;
+    int x, y;
+    cout << "Enter the number: ";
+    cin >> x;
+    cout << "Enter the number: ";
+    cin >> y;
+    bool flag = true;
+    while (y != 0)
+    {
+        if (y <= x)
+        {
+            flag = false;
+        }
+        x = y;
+        cout << "Enter the number: ";
+        cin >> y;
+    }
+    if (flag == false)
+    {
+        cout << "false";
+    }
+    else
+    {
+       cout << "true";
+    }
 
 
+    return 0;
+}
 	
 
 }
